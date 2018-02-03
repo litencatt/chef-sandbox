@@ -37,6 +37,8 @@
     }
   },
   "run_list": [
-    "recipe[create_file]"
+    "recipe[dstat]",
+    "recipe[apache]",
+    "recipe[mysql]"
   ]
 }
