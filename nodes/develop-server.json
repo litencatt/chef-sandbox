@@ -1,6 +1,5 @@
 {
   "name": "develop-server",
-  "chef_environment": "development",
   "normal": {
     "knife_zero": {
       "host": "webdb"
@@ -19,8 +18,12 @@
 
     ],
     "recipes": [
-      "create_file",
-      "create_file::default"
+      "dstat",
+      "dstat::default",
+      "apache",
+      "apache::default",
+      "mysql",
+      "mysql::default"
     ],
     "platform": "centos",
     "platform_version": "7.2.1511",
@@ -37,6 +40,8 @@
     }
   },
   "run_list": [
-    "recipe[create_file]"
+    "recipe[dstat]",
+    "recipe[apache]",
+    "recipe[mysql]"
   ]
 }
