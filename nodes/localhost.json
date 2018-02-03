@@ -1,5 +1,5 @@
 {
-  "name": "localhost",
+  "name": "develop-server",
   "normal": {
     "knife_zero": {
       "host": "webdb"
