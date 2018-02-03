@@ -18,7 +18,8 @@
 
     ],
     "recipes": [
-
+      "create_file",
+      "create_file::default"
     ],
     "platform": "centos",
     "platform_version": "7.2.1511",
@@ -33,5 +34,8 @@
         "ohai_root": "/opt/chef/embedded/lib/ruby/gems/2.3.0/gems/ohai-8.25.1/lib/ohai"
       }
     }
-  }
+  },
+  "run_list": [
+    "recipe[create_file]"
+  ]
 }
