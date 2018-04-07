@@ -16,5 +16,4 @@ knife[:automatic_attribute_whitelist] = %w[
   platform_version
   cloud
   cloud_v2
-  chef_packages
 ]
