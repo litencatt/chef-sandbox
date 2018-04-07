@@ -6,6 +6,7 @@
 .envrc
 .rake_tasks
 .rake_tasks
+.vagrant/
 /bin
 /docker-build.log
 backup
