@@ -1,0 +1,27 @@
+{
+  "name": "proxy01",
+  "normal": {
+    "knife_zero": {
+      "host": "proxy"
+    },
+    "tags": [
+
+    ]
+  },
+  "automatic": {
+    "fqdn": "proxy01",
+    "os": "linux",
+    "os_version": "3.10.0-327.36.1.el7.x86_64",
+    "hostname": "proxy01",
+    "ipaddress": "10.0.2.15",
+    "roles": [
+
+    ],
+    "recipes": [
+
+    ],
+    "platform": "centos",
+    "platform_version": "7.2.1511",
+    "cloud_v2": null
+  }
+}
