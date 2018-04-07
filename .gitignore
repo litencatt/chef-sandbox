@@ -1,2 +1,16 @@
-.vagrant/
+!vendor/bundle/.keep
+!vendor/cookbooks/.keep
+*secret_data_bag_key
+.bundle/config
+.env
+.envrc
+.rake_tasks
+.rake_tasks
+/bin
+/docker-build.log
+backup
 clients
+nodes/*pbdev.json
+nodes/vagrant*
+vendor/bundle
+vendor/cookbooks
