@@ -1,11 +1,13 @@
 DEPENDENCIES
   apache2
   mysql
+  yum
   yum-epel
 
 GRAPH
   apache2 (5.0.1)
   compat_resource (12.19.1)
   mysql (8.5.1)
+  yum (5.1.0)
   yum-epel (2.1.2)
     compat_resource (>= 12.16.3)
