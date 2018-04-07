@@ -3,13 +3,13 @@ Vagrant.configure("2") do |config|
   config.vm.network :private_network, ip: '192.168.33.10'
   config.vm.box = "centos/7"
 
-  base = {
+  proxy = {
     ip: '192.168.33.10',
-    hostname: :base
+    hostname: :proxy01
   }
 
-  config.vm.define :base do |c|
-    c.vm.network :private_network, ip: base[:ip]
-    c.vm.hostname = base[:hostname]
+  config.vm.define :proxy do |c|
+    c.vm.network :private_network, ip: proxy[:ip]
+    c.vm.hostname = proxy[:hostname]
   end
 end
