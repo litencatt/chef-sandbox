@@ -1,5 +1,8 @@
 DEPENDENCIES
   apache2
+  motd
+    git: https://github.com/linyows/motd-cookbook.git
+    revision: 8981cd11c8d219912955c5b523e135bd719f6e14
   mysql
   yum
   yum-epel
@@ -7,6 +10,7 @@ DEPENDENCIES
 GRAPH
   apache2 (5.0.1)
   compat_resource (12.19.1)
+  motd (0.2.0)
   mysql (8.5.1)
   yum (5.1.0)
   yum-epel (2.1.2)
