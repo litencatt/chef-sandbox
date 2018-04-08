@@ -1,0 +1,13 @@
+{
+  "name": "proxy",
+  "description": "proxy-server",
+  "json_class": "Chef::Role",
+  "override_attributes": {
+    "motd": {
+      "cookbook": "proxy"
+    }
+  },
+  "run_list": [
+    "recipe[proxy]"
+  ]
+}
