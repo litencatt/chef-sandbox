@@ -1,0 +1,13 @@
+{
+  "name": "app",
+  "description": "app-server",
+  "json_class": "Chef::Role",
+  "override_attributes": {
+    "motd": {
+      "cookbook": "app"
+    }
+  },
+  "run_list": [
+    "recipe[app]"
+  ]
+}

@@ -1,0 +1,23 @@
+<%= "\033[34m" -%>
+  ____ _____  ____
+ / __ `/ __ \/ __ \
+/ /_/ / /_/ / /_/ /
+\__,_/ .___/ .___/
+    /_/   /_/
+<%= "\033[0m" -%>
+
+Chef-Client - <%= node.name %>
+Hostname: <%= node['cloud'] ? node['cloud']['public_hostname'] : node['fqdn'] %>
+<% if !Chef::Config[:solo] -%>
+Chef Server: <%= Chef::Config[:chef_server_url] %>
+<% end -%>
+<% if node.chef_environment != '_default' -%>
+Environment: <%= node.chef_environment %>
+<% end -%>
+Last Run: <%= ::Time.now %>
+<% unless node['roles'].empty? -%>
+Roles: <%= node['roles'].join(', ') %>
+<% end -%>
+<% if node['tags'] && !node['tags'].empty? -%>
+Tags: <%= node['tags'].join(', ') -%>
+<% end -%>
