@@ -1,12 +1,12 @@
 ServerRoot "/etc/httpd"
+ServerAdmin root@localhost
+ServerName <%= node['fqdn'] %>
+
 Listen 80
 Include conf.modules.d/*.conf
 
 User  apache
 Group apache
-
-ServerAdmin root@localhost
-ServerName webdb:80
 
 <Directory />
     AllowOverride none
@@ -17,7 +17,6 @@ DocumentRoot "/var/www/html"
 
 <Directory "/var/www">
     AllowOverride None
-    # Allow open access:
     Require all granted
 </Directory>
 
@@ -28,7 +27,7 @@ DocumentRoot "/var/www/html"
 </Directory>
 
 <IfModule dir_module>
-    DirectoryIndex index.html
+    DirectoryIndex index.html index.php
 </IfModule>
 
 <Files ".ht*">
