@@ -1,3 +1,4 @@
+.DS_Store
 !vendor/bundle/.keep
 !vendor/cookbooks/.keep
 *secret_data_bag_key
