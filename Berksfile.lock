@@ -5,10 +5,14 @@ DEPENDENCIES
     git: https://github.com/linyows/motd-cookbook.git
     revision: 8981cd11c8d219912955c5b523e135bd719f6e14
   mysql
+  phpenv
+    git: https://github.com/Numergy/phpenv-cookbook
+    revision: c0fa251266a5501d98410c2b2a3eeaa6b3048402
   yum
 
 GRAPH
   apache2 (5.0.1)
+  apt (7.1.1)
   build-essential (8.2.1)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
@@ -18,6 +22,9 @@ GRAPH
     seven_zip (>= 0.0.0)
   motd (0.2.0)
   mysql (8.5.1)
+  phpenv (0.7.2)
+    apt (>= 0.0.0)
+    build-essential (>= 0.0.0)
   seven_zip (3.0.0)
     windows (>= 0.0.0)
   windows (5.1.1)
