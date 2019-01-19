@@ -27,6 +27,6 @@ default['phpenv']['packages'] = %w(
   git
 )
 
-default['phpenv']['phps'] = ['7.2.1']
-default['phpenv']['global'] = '7.2.1'
-default['phpenv']['mod_php'] = '7.2.1'
+default['phpenv']['phps'] = ['7.3.1']
+default['phpenv']['global'] = '7.3.1'
+default['phpenv']['mod_php'] = '7.3.1'
