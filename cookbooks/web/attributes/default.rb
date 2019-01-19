@@ -29,3 +29,8 @@ default['phpenv']['packages'] = %w(
 default['phpenv']['phps'] = ['7.3.1']
 default['phpenv']['global'] = '7.3.1'
 default['phpenv']['mod_php'] = '7.3.1'
+
+default[:fqdn] = 'web.sandbox.test'
+default['web']['document_root'] = '/var/www/web'
+default['web']['server_name'] = default[:fqdn]
+default['web']['max_client'] = 100
