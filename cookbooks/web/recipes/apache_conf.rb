@@ -1,5 +1,4 @@
 template '/etc/httpd/conf/httpd.conf' do
-  source 'httpd.conf.erb'
   mode 0644
   variables(
     :document_root => node['web']['document_root'],
@@ -13,4 +12,3 @@ cookbook_file '/etc/httpd/conf.d/ssl.conf' do
   source 'ssl.conf'
   notifies :reload, 'service[httpd]'
 end
-
