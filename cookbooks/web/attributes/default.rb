@@ -1,5 +1,4 @@
 default['phpenv']['root_path'] = '/usr/local/phpenv'
-default['phpenv']['default_configure_options_cookbook'] = 'web'
 default['phpenv']['packages'] = %w(
   httpd-devel
   bzip2-devel
