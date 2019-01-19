@@ -69,6 +69,7 @@ Vagrant.configure("2") do |config|
     c.vm.provision :chef_zero do |chef|
       _configure chef
       chef.add_role 'base'
+      chef.add_role 'web'
     end
   end
 end
