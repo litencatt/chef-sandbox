@@ -77,9 +77,9 @@ LoadModule mpm_prefork_module modules/mod_mpm_prefork.so
 IncludeOptional conf.d/*.conf
 
 <IfModule prefork.c>
-StartServers            30
-MinSpareServers         30
-MaxSpareServers         80
+StartServers            10
+MinSpareServers         10
+MaxSpareServers         20
 ServerLimit            <%= @max_client %>
 MaxRequestWorkers      <%= @max_client %>
 MaxRequestsPerChild   2000
