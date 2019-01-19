@@ -63,7 +63,7 @@ Vagrant.configure("2") do |config|
     end
   end
 
-  config.vm.define :sandbox do |c|
+  config.vm.define :webmailer do |c|
     c.vm.network :private_network, ip: sandbox[:ip]
     c.vm.hostname = sandbox[:hostname]
     c.vm.provision :chef_zero do |chef|
