@@ -1,6 +1,8 @@
 DEPENDENCIES
-  apache2
   git
+  httpd
+    git: https://github.com/chef-cookbooks/httpd.git
+    revision: a19589d7c9017a10e745c0d5325b94b68de25ce4
   motd
     git: https://github.com/linyows/motd-cookbook.git
     revision: 8981cd11c8d219912955c5b523e135bd719f6e14
@@ -11,13 +13,13 @@ DEPENDENCIES
   yum
 
 GRAPH
-  apache2 (5.0.1)
   apt (7.1.1)
   build-essential (8.2.1)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
   git (9.0.1)
     build-essential (>= 5.0.0)
+  httpd (0.6.2)
   mingw (2.1.0)
     seven_zip (>= 0.0.0)
   motd (0.2.0)

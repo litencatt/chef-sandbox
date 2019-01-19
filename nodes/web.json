@@ -220,6 +220,12 @@
       ],
       "global": "7.3.1",
       "mod_php": "7.3.1"
+    },
+    "fqdn": "web.sandbox.test",
+    "web": {
+      "document_root": "/var/www/web",
+      "server_name": "web.sandbox.test",
+      "max_client": 100
     }
   },
   "automatic": {
@@ -295,12 +301,12 @@
       "by_device": {
         "/dev/mapper/centos-root": {
           "kb_size": "42954248",
-          "kb_used": "2278104",
-          "kb_available": "40676144",
-          "percent_used": "6%",
+          "kb_used": "2716704",
+          "kb_available": "40237544",
+          "percent_used": "7%",
           "total_inodes": "21487616",
-          "inodes_used": "98548",
-          "inodes_available": "21389068",
+          "inodes_used": "119821",
+          "inodes_available": "21367795",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -391,12 +397,12 @@
         },
         "/dev/mapper/centos-home": {
           "kb_size": "20969468",
-          "kb_used": "33044",
-          "kb_available": "20936424",
+          "kb_used": "33048",
+          "kb_available": "20936420",
           "percent_used": "1%",
           "total_inodes": "10489856",
-          "inodes_used": "17",
-          "inodes_available": "10489839",
+          "inodes_used": "18",
+          "inodes_available": "10489838",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -414,12 +420,12 @@
         },
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/cookbooks": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -447,12 +453,12 @@
         },
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/vendor/cookbooks": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -480,12 +486,12 @@
         },
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/roles": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -513,12 +519,12 @@
         },
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/environments": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -546,12 +552,12 @@
         },
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/nodes": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -759,6 +765,16 @@
             "/var/lib/nfs/rpc_pipefs"
           ]
         },
+        "binfmt_misc": {
+          "fs_type": "binfmt_misc",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "mounts": [
+            "/proc/sys/fs/binfmt_misc"
+          ]
+        },
         "/dev/sda": {
           "mounts": [
 
@@ -791,12 +807,12 @@
       "by_mountpoint": {
         "/": {
           "kb_size": "42954248",
-          "kb_used": "2278104",
-          "kb_available": "40676144",
-          "percent_used": "6%",
+          "kb_used": "2716704",
+          "kb_available": "40237544",
+          "percent_used": "7%",
           "total_inodes": "21487616",
-          "inodes_used": "98548",
-          "inodes_available": "21389068",
+          "inodes_used": "119821",
+          "inodes_available": "21367795",
           "inodes_percent_used": "1%",
           "fs_type": "rootfs",
           "mount_options": [
@@ -852,8 +868,8 @@
         },
         "/run": {
           "kb_size": "508076",
-          "kb_used": "6736",
-          "kb_available": "501340",
+          "kb_used": "6744",
+          "kb_available": "501332",
           "percent_used": "2%",
           "total_inodes": "127019",
           "inodes_used": "425",
@@ -918,12 +934,12 @@
         },
         "/home": {
           "kb_size": "20969468",
-          "kb_used": "33044",
-          "kb_available": "20936424",
+          "kb_used": "33048",
+          "kb_available": "20936420",
           "percent_used": "1%",
           "total_inodes": "10489856",
-          "inodes_used": "17",
-          "inodes_available": "10489839",
+          "inodes_used": "18",
+          "inodes_available": "10489838",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -941,12 +957,12 @@
         },
         "/tmp/vagrant-chef/fd193abe5acef184cc5632973ecb46ff/cookbooks": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -974,12 +990,12 @@
         },
         "/tmp/vagrant-chef/457874f25015832a08f228f0bae33b00/cookbooks": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -1007,12 +1023,12 @@
         },
         "/tmp/vagrant-chef/c1bfea07d420641cc3705e0c08efbca0/roles": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -1040,12 +1056,12 @@
         },
         "/tmp/vagrant-chef/74d7a7d028ec9a995fd20712f1a88fd8/environments": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -1073,12 +1089,12 @@
         },
         "/tmp/vagrant-chef/5cc42a19e4755b120bb70e8e2c4b1058/nodes": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -1377,20 +1393,14 @@
           ]
         },
         "/proc/sys/fs/binfmt_misc": {
-          "fs_type": "autofs",
+          "fs_type": "binfmt_misc",
           "mount_options": [
             "rw",
-            "relatime",
-            "fd=33",
-            "pgrp=1",
-            "timeout=0",
-            "minproto=5",
-            "maxproto=5",
-            "direct",
-            "pipe_ino=11333"
+            "relatime"
           ],
           "devices": [
-            "systemd-1"
+            "systemd-1",
+            "binfmt_misc"
           ]
         },
         "/dev/mqueue": {
@@ -1450,13 +1460,13 @@
         "/dev/mapper/centos-root,/": {
           "device": "/dev/mapper/centos-root",
           "kb_size": "42954248",
-          "kb_used": "2278104",
-          "kb_available": "40676144",
-          "percent_used": "6%",
+          "kb_used": "2716704",
+          "kb_available": "40237544",
+          "percent_used": "7%",
           "mount": "/",
           "total_inodes": "21487616",
-          "inodes_used": "98548",
-          "inodes_available": "21389068",
+          "inodes_used": "119821",
+          "inodes_available": "21367795",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -1512,8 +1522,8 @@
         "tmpfs,/run": {
           "device": "tmpfs",
           "kb_size": "508076",
-          "kb_used": "6736",
-          "kb_available": "501340",
+          "kb_used": "6744",
+          "kb_available": "501332",
           "percent_used": "2%",
           "mount": "/run",
           "total_inodes": "127019",
@@ -1575,13 +1585,13 @@
         "/dev/mapper/centos-home,/home": {
           "device": "/dev/mapper/centos-home",
           "kb_size": "20969468",
-          "kb_used": "33044",
-          "kb_available": "20936424",
+          "kb_used": "33048",
+          "kb_available": "20936420",
           "percent_used": "1%",
           "mount": "/home",
           "total_inodes": "10489856",
-          "inodes_used": "17",
-          "inodes_available": "10489839",
+          "inodes_used": "18",
+          "inodes_available": "10489838",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -1597,13 +1607,13 @@
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/cookbooks,/tmp/vagrant-chef/fd193abe5acef184cc5632973ecb46ff/cookbooks": {
           "device": "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/cookbooks",
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "mount": "/tmp/vagrant-chef/fd193abe5acef184cc5632973ecb46ff/cookbooks",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -1629,13 +1639,13 @@
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/vendor/cookbooks,/tmp/vagrant-chef/457874f25015832a08f228f0bae33b00/cookbooks": {
           "device": "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/vendor/cookbooks",
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "mount": "/tmp/vagrant-chef/457874f25015832a08f228f0bae33b00/cookbooks",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -1661,13 +1671,13 @@
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/roles,/tmp/vagrant-chef/c1bfea07d420641cc3705e0c08efbca0/roles": {
           "device": "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/roles",
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "mount": "/tmp/vagrant-chef/c1bfea07d420641cc3705e0c08efbca0/roles",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -1693,13 +1703,13 @@
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/environments,/tmp/vagrant-chef/74d7a7d028ec9a995fd20712f1a88fd8/environments": {
           "device": "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/environments",
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "mount": "/tmp/vagrant-chef/74d7a7d028ec9a995fd20712f1a88fd8/environments",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -1725,13 +1735,13 @@
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/nodes,/tmp/vagrant-chef/5cc42a19e4755b120bb70e8e2c4b1058/nodes": {
           "device": "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/nodes",
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "mount": "/tmp/vagrant-chef/5cc42a19e4755b120bb70e8e2c4b1058/nodes",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -2065,6 +2075,15 @@
           "device": "sunrpc",
           "mount": "/var/lib/nfs/rpc_pipefs",
           "fs_type": "rpc_pipefs",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ]
+        },
+        "binfmt_misc,/proc/sys/fs/binfmt_misc": {
+          "device": "binfmt_misc",
+          "mount": "/proc/sys/fs/binfmt_misc",
+          "fs_type": "binfmt_misc",
           "mount_options": [
             "rw",
             "relatime"
@@ -2097,12 +2116,12 @@
       "by_device": {
         "/dev/mapper/centos-root": {
           "kb_size": "42954248",
-          "kb_used": "2278104",
-          "kb_available": "40676144",
-          "percent_used": "6%",
+          "kb_used": "2716704",
+          "kb_available": "40237544",
+          "percent_used": "7%",
           "total_inodes": "21487616",
-          "inodes_used": "98548",
-          "inodes_available": "21389068",
+          "inodes_used": "119821",
+          "inodes_available": "21367795",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -2193,12 +2212,12 @@
         },
         "/dev/mapper/centos-home": {
           "kb_size": "20969468",
-          "kb_used": "33044",
-          "kb_available": "20936424",
+          "kb_used": "33048",
+          "kb_available": "20936420",
           "percent_used": "1%",
           "total_inodes": "10489856",
-          "inodes_used": "17",
-          "inodes_available": "10489839",
+          "inodes_used": "18",
+          "inodes_available": "10489838",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -2216,12 +2235,12 @@
         },
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/cookbooks": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -2249,12 +2268,12 @@
         },
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/vendor/cookbooks": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -2282,12 +2301,12 @@
         },
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/roles": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -2315,12 +2334,12 @@
         },
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/environments": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -2348,12 +2367,12 @@
         },
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/nodes": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -2561,6 +2580,16 @@
             "/var/lib/nfs/rpc_pipefs"
           ]
         },
+        "binfmt_misc": {
+          "fs_type": "binfmt_misc",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "mounts": [
+            "/proc/sys/fs/binfmt_misc"
+          ]
+        },
         "/dev/sda": {
           "mounts": [
 
@@ -2593,12 +2622,12 @@
       "by_mountpoint": {
         "/": {
           "kb_size": "42954248",
-          "kb_used": "2278104",
-          "kb_available": "40676144",
-          "percent_used": "6%",
+          "kb_used": "2716704",
+          "kb_available": "40237544",
+          "percent_used": "7%",
           "total_inodes": "21487616",
-          "inodes_used": "98548",
-          "inodes_available": "21389068",
+          "inodes_used": "119821",
+          "inodes_available": "21367795",
           "inodes_percent_used": "1%",
           "fs_type": "rootfs",
           "mount_options": [
@@ -2654,8 +2683,8 @@
         },
         "/run": {
           "kb_size": "508076",
-          "kb_used": "6736",
-          "kb_available": "501340",
+          "kb_used": "6744",
+          "kb_available": "501332",
           "percent_used": "2%",
           "total_inodes": "127019",
           "inodes_used": "425",
@@ -2720,12 +2749,12 @@
         },
         "/home": {
           "kb_size": "20969468",
-          "kb_used": "33044",
-          "kb_available": "20936424",
+          "kb_used": "33048",
+          "kb_available": "20936420",
           "percent_used": "1%",
           "total_inodes": "10489856",
-          "inodes_used": "17",
-          "inodes_available": "10489839",
+          "inodes_used": "18",
+          "inodes_available": "10489838",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -2743,12 +2772,12 @@
         },
         "/tmp/vagrant-chef/fd193abe5acef184cc5632973ecb46ff/cookbooks": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -2776,12 +2805,12 @@
         },
         "/tmp/vagrant-chef/457874f25015832a08f228f0bae33b00/cookbooks": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -2809,12 +2838,12 @@
         },
         "/tmp/vagrant-chef/c1bfea07d420641cc3705e0c08efbca0/roles": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -2842,12 +2871,12 @@
         },
         "/tmp/vagrant-chef/74d7a7d028ec9a995fd20712f1a88fd8/environments": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -2875,12 +2904,12 @@
         },
         "/tmp/vagrant-chef/5cc42a19e4755b120bb70e8e2c4b1058/nodes": {
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -3179,20 +3208,14 @@
           ]
         },
         "/proc/sys/fs/binfmt_misc": {
-          "fs_type": "autofs",
+          "fs_type": "binfmt_misc",
           "mount_options": [
             "rw",
-            "relatime",
-            "fd=33",
-            "pgrp=1",
-            "timeout=0",
-            "minproto=5",
-            "maxproto=5",
-            "direct",
-            "pipe_ino=11333"
+            "relatime"
           ],
           "devices": [
-            "systemd-1"
+            "systemd-1",
+            "binfmt_misc"
           ]
         },
         "/dev/mqueue": {
@@ -3252,13 +3275,13 @@
         "/dev/mapper/centos-root,/": {
           "device": "/dev/mapper/centos-root",
           "kb_size": "42954248",
-          "kb_used": "2278104",
-          "kb_available": "40676144",
-          "percent_used": "6%",
+          "kb_used": "2716704",
+          "kb_available": "40237544",
+          "percent_used": "7%",
           "mount": "/",
           "total_inodes": "21487616",
-          "inodes_used": "98548",
-          "inodes_available": "21389068",
+          "inodes_used": "119821",
+          "inodes_available": "21367795",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -3314,8 +3337,8 @@
         "tmpfs,/run": {
           "device": "tmpfs",
           "kb_size": "508076",
-          "kb_used": "6736",
-          "kb_available": "501340",
+          "kb_used": "6744",
+          "kb_available": "501332",
           "percent_used": "2%",
           "mount": "/run",
           "total_inodes": "127019",
@@ -3377,13 +3400,13 @@
         "/dev/mapper/centos-home,/home": {
           "device": "/dev/mapper/centos-home",
           "kb_size": "20969468",
-          "kb_used": "33044",
-          "kb_available": "20936424",
+          "kb_used": "33048",
+          "kb_available": "20936420",
           "percent_used": "1%",
           "mount": "/home",
           "total_inodes": "10489856",
-          "inodes_used": "17",
-          "inodes_available": "10489839",
+          "inodes_used": "18",
+          "inodes_available": "10489838",
           "inodes_percent_used": "1%",
           "fs_type": "xfs",
           "mount_options": [
@@ -3399,13 +3422,13 @@
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/cookbooks,/tmp/vagrant-chef/fd193abe5acef184cc5632973ecb46ff/cookbooks": {
           "device": "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/cookbooks",
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "mount": "/tmp/vagrant-chef/fd193abe5acef184cc5632973ecb46ff/cookbooks",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -3431,13 +3454,13 @@
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/vendor/cookbooks,/tmp/vagrant-chef/457874f25015832a08f228f0bae33b00/cookbooks": {
           "device": "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/vendor/cookbooks",
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "mount": "/tmp/vagrant-chef/457874f25015832a08f228f0bae33b00/cookbooks",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -3463,13 +3486,13 @@
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/roles,/tmp/vagrant-chef/c1bfea07d420641cc3705e0c08efbca0/roles": {
           "device": "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/roles",
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "mount": "/tmp/vagrant-chef/c1bfea07d420641cc3705e0c08efbca0/roles",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -3495,13 +3518,13 @@
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/environments,/tmp/vagrant-chef/74d7a7d028ec9a995fd20712f1a88fd8/environments": {
           "device": "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/environments",
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "mount": "/tmp/vagrant-chef/74d7a7d028ec9a995fd20712f1a88fd8/environments",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -3527,13 +3550,13 @@
         "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/nodes,/tmp/vagrant-chef/5cc42a19e4755b120bb70e8e2c4b1058/nodes": {
           "device": "192.168.33.1:/Users/nakamurakousuke/.ghq/github.com/litencatt/chef-sandbox/nodes",
           "kb_size": "243941376",
-          "kb_used": "206738936",
-          "kb_available": "36946440",
-          "percent_used": "85%",
+          "kb_used": "207172952",
+          "kb_available": "36512424",
+          "percent_used": "86%",
           "mount": "/tmp/vagrant-chef/5cc42a19e4755b120bb70e8e2c4b1058/nodes",
           "total_inodes": "4294967279",
-          "inodes_used": "2607146",
-          "inodes_available": "4292360133",
+          "inodes_used": "2607260",
+          "inodes_available": "4292360019",
           "inodes_percent_used": "1%",
           "fs_type": "nfs",
           "mount_options": [
@@ -3867,6 +3890,15 @@
           "device": "sunrpc",
           "mount": "/var/lib/nfs/rpc_pipefs",
           "fs_type": "rpc_pipefs",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ]
+        },
+        "binfmt_misc,/proc/sys/fs/binfmt_misc": {
+          "device": "binfmt_misc",
+          "mount": "/proc/sys/fs/binfmt_misc",
+          "fs_type": "binfmt_misc",
           "mount_options": [
             "rw",
             "relatime"
@@ -3903,6 +3935,10 @@
       "processor": "x86_64",
       "os": "GNU/Linux",
       "modules": {
+        "binfmt_misc": {
+          "size": "17468",
+          "refcount": "1"
+        },
         "nfsv3": {
           "size": "39436",
           "refcount": "1"
@@ -4185,9 +4221,9 @@
     },
     "memory": {
       "swap": {
-        "cached": "4684kB",
+        "cached": "4252kB",
         "total": "2097148kB",
-        "free": "2047680kB"
+        "free": "2049076kB"
       },
       "hugepages": {
         "total": "0",
@@ -4196,24 +4232,24 @@
         "surplus": "0"
       },
       "total": "1016156kB",
-      "free": "201532kB",
-      "available": "689728kB",
+      "free": "223308kB",
+      "available": "619736kB",
       "buffers": "4176kB",
-      "cached": "586068kB",
-      "active": "347516kB",
-      "inactive": "334620kB",
-      "dirty": "44kB",
+      "cached": "463260kB",
+      "active": "314736kB",
+      "inactive": "244576kB",
+      "dirty": "1608kB",
       "writeback": "4kB",
-      "anon_pages": "88356kB",
-      "mapped": "17108kB",
-      "slab": "84256kB",
-      "slab_reclaimable": "54084kB",
-      "slab_unreclaim": "30172kB",
-      "page_tables": "4960kB",
+      "anon_pages": "89552kB",
+      "mapped": "20028kB",
+      "slab": "164484kB",
+      "slab_reclaimable": "115488kB",
+      "slab_unreclaim": "48996kB",
+      "page_tables": "4968kB",
       "nfs_unstable": "0kB",
       "bounce": "0kB",
       "commit_limit": "2605224kB",
-      "committed_as": "452864kB",
+      "committed_as": "453052kB",
       "vmalloc_total": "34359738367kB",
       "vmalloc_used": "12000kB",
       "vmalloc_chunk": "34359721980kB",
@@ -4465,16 +4501,16 @@
           "enp0s3": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "2100346",
-              "packets": "28545",
+              "bytes": "4006214",
+              "packets": "43181",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "221065011",
-              "packets": "158572",
+              "bytes": "246178258",
+              "packets": "190555",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -4483,16 +4519,16 @@
           "enp0s8": {
             "tx": {
               "queuelen": "1000",
-              "bytes": "835212",
-              "packets": "4518",
+              "bytes": "5170340",
+              "packets": "33704",
               "errors": "0",
               "drop": "0",
               "carrier": "0",
               "collisions": "0"
             },
             "rx": {
-              "bytes": "2505558",
-              "packets": "6258",
+              "bytes": "9757276",
+              "packets": "36784",
               "errors": "0",
               "drop": "0",
               "overrun": "0"
@@ -4512,10 +4548,10 @@
     "platform": "centos",
     "platform_version": "7.4.1708",
     "platform_family": "rhel",
-    "uptime_seconds": 34020,
-    "uptime": "9 hours 27 minutes 00 seconds",
-    "idletime_seconds": 32723,
-    "idletime": "9 hours 05 minutes 23 seconds",
+    "uptime_seconds": 39529,
+    "uptime": "10 hours 58 minutes 49 seconds",
+    "idletime_seconds": 37206,
+    "idletime": "10 hours 20 minutes 06 seconds",
     "virtualization": {
       "systems": {
         "vbox": "guest"
@@ -4545,10 +4581,10 @@
         "archname": "x86_64-linux-thread-multi"
       },
       "php": {
-        "version": "7.2.1",
-        "builddate": "Jan 19 2019 07:05:52",
-        "zend_engine_version": "3.2.0",
-        "zend_opcache_version": "7.2.1"
+        "version": "7.3.1",
+        "builddate": "Jan 19 2019 16:15:06",
+        "zend_engine_version": "3.3.1",
+        "zend_opcache_version": "7.3.1"
       },
       "python": {
         "version": "2.7.5",
@@ -5250,8 +5286,8 @@
     "machine_id": "0fb1a22b768f453397e321fe9954a766",
     "sessions": {
       "by_session": {
-        "17": {
-          "session": "17",
+        "46": {
+          "session": "46",
           "uid": "1000",
           "user": "vagrant",
           "seat": null
@@ -5260,7 +5296,7 @@
       "by_user": {
         "vagrant": [
           {
-            "session": "17",
+            "session": "46",
             "uid": "1000",
             "user": "vagrant",
             "seat": null
@@ -5309,7 +5345,7 @@
       "search-state-factory": "/usr/local/share/factory/var",
       "search-configuration": "/root/.config"
     },
-    "ohai_time": 1547913861.8538995,
+    "ohai_time": 1547919370.849185,
     "packages": {
       "libcom_err-devel": {
         "epoch": "0",
@@ -7222,13 +7258,6 @@
         "installdate": "1547880128",
         "arch": "noarch"
       },
-      "httpd-devel": {
-        "epoch": "0",
-        "version": "2.4.6",
-        "release": "88.el7.centos",
-        "installdate": "1547880129",
-        "arch": "x86_64"
-      },
       "rpm": {
         "epoch": "0",
         "version": "4.11.3",
@@ -8174,13 +8203,6 @@
         "installdate": "1521928262",
         "arch": "x86_64"
       },
-      "httpd": {
-        "epoch": "0",
-        "version": "2.4.6",
-        "release": "88.el7.centos",
-        "installdate": "1547880129",
-        "arch": "x86_64"
-      },
       "rpm-libs": {
         "epoch": "0",
         "version": "4.11.3",
@@ -8354,7 +8376,7 @@
       "ULONG_MAX": 18446744073709551615,
       "USHRT_MAX": 65535,
       "WORD_BIT": 32,
-      "_AVPHYS_PAGES": 47340,
+      "_AVPHYS_PAGES": 54524,
       "_NPROCESSORS_CONF": 1,
       "_NPROCESSORS_ONLN": 1,
       "_PHYS_PAGES": 254039,
@@ -8635,7 +8657,9 @@
       "phpenv::default",
       "apt::default",
       "build-essential::default",
-      "web::php_build"
+      "web::php_build",
+      "web::apache",
+      "web::apache_conf"
     ],
     "expanded_run_list": [
       "base::default",
@@ -8660,6 +8684,9 @@
       },
       "phpenv": {
         "version": "0.7.2"
+      },
+      "httpd": {
+        "version": "0.6.2"
       },
       "build-essential": {
         "version": "8.2.1"
