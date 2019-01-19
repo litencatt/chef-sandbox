@@ -17,6 +17,11 @@ Vagrant.configure("2") do |config|
     hostname: :app01
   }
 
+  web = {
+    ip: '192.168.33.12',
+    hostname: :web
+  }
+
   def _configure(chef)
     chef.version = '13.10'
     chef.cookbooks_path = %w(cookbooks vendor/cookbooks)
@@ -55,6 +60,16 @@ Vagrant.configure("2") do |config|
       _configure chef
       chef.add_role 'base'
       chef.add_role 'app'
+    end
+  end
+
+  config.vm.define :web do |c|
+    c.vm.network :private_network, ip: web[:ip]
+    c.vm.hostname = web[:hostname]
+    c.vm.provision :chef_zero do |chef|
+      _configure chef
+      chef.add_role 'base'
+      chef.add_role 'web'
     end
   end
 end
