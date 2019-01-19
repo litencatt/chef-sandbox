@@ -1,5 +1,4 @@
 DEPENDENCIES
-  apache2
   git
   motd
     git: https://github.com/linyows/motd-cookbook.git
@@ -11,7 +10,6 @@ DEPENDENCIES
   yum
 
 GRAPH
-  apache2 (5.0.1)
   apt (7.1.1)
   build-essential (8.2.1)
     mingw (>= 1.1)
