@@ -17,9 +17,9 @@ Vagrant.configure("2") do |config|
     hostname: :app01
   }
 
-  sandbox = {
+  web = {
     ip: '192.168.33.12',
-    hostname: :app02
+    hostname: :web
   }
 
   def _configure(chef)
@@ -63,9 +63,9 @@ Vagrant.configure("2") do |config|
     end
   end
 
-  config.vm.define :webmailer do |c|
-    c.vm.network :private_network, ip: sandbox[:ip]
-    c.vm.hostname = sandbox[:hostname]
+  config.vm.define :web do |c|
+    c.vm.network :private_network, ip: web[:ip]
+    c.vm.hostname = web[:hostname]
     c.vm.provision :chef_zero do |chef|
       _configure chef
       chef.add_role 'base'
