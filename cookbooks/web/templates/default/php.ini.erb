@@ -14,8 +14,13 @@ expose_php = On
 max_execution_time = 30
 max_input_time = 60
 memory_limit = 128M
-error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT & ~E_NOTICE & ~E_USER_NOTICE
+<% if %w(development vagrant).include?(node.chef_environment) %>
+error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT
+display_errors = On
+<% else %>
+error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT & ~E_NOTICE & ~E_USER_NOTICE & ~E_WARNING
 display_errors = Off
+<% end %>
 display_startup_errors = Off
 log_errors = On
 log_errors_max_len = 1024
@@ -142,4 +147,4 @@ ldap.max_links = -1
 [opcache]
 [curl]
 [openssl]
-zend_extension=/usr/local/phpenv/versions/<%= node['phpenv']['global'] %>/lib/php/extensions/no-debug-zts-20170718/opcache.so
+zend_extension=/usr/local/phpenv/versions/<%= node['phpenv']['global'] %>/lib/php/extensions/no-debug-zts-20180731/opcache.so
