@@ -1,5 +1,5 @@
 DEPENDENCIES
-  git
+  git (~> 6.0.0)
   httpd
     git: https://github.com/chef-cookbooks/httpd.git
     revision: a19589d7c9017a10e745c0d5325b94b68de25ce4
@@ -23,8 +23,11 @@ GRAPH
   build-essential (8.2.1)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
-  git (9.0.1)
-    build-essential (>= 5.0.0)
+  dmg (4.1.1)
+  git (6.0.0)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    yum-epel (>= 0.0.0)
   httpd (0.6.2)
   mingw (2.1.0)
     seven_zip (>= 0.0.0)
