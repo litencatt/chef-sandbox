@@ -70,10 +70,6 @@ LogFormat "host:%a\tuser:%u\ttime:%{%d/%b/%Y:%H:%M:%S %z}t\tmethod:%m\turi:%U%q\
 
 ServerSignature On
 
-ErrorDocument 403 http://err.osaipo.jp/error-403_osaipo/index.html
-ErrorDocument 404 http://err.osaipo.jp/error-404_osaipo/index.html
-ErrorDocument 500 http://err.osaipo.jp/error-500_osaipo/index.html
-
 IndexOptions FancyIndexing VersionSort NameWidth=* HTMLTable Charset=UTF-8
 
 AddIconByEncoding (CMP,/icons/compressed.gif) x-compress x-gzip
@@ -170,29 +166,15 @@ BrowserMatch "^gnome-vfs/1.0" redirect-carefully
 BrowserMatch "^XML Spy" redirect-carefully
 BrowserMatch "^Dreamweaver-WebDAV-SCM1" redirect-carefully
 
-<Location /server-status>
-    SetHandler server-status
-    Order deny,allow
-    Deny from all
-    Allow from natter.interq.or.jp 221.246.62.10 localhost 192.168.75.0/24
-</Location>
-
-<Files ~ "(apc|info)\.php$">
-    Order deny,allow
-    Deny from all
-    Allow from natter.interq.or.jp 221.246.62.10 localhost 192.168.75.0/24
-</Files>
-
-<ifModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteCond %{HTTPS} off
-  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
-</ifModule>
+#<ifModule mod_rewrite.c>
+#  RewriteEngine On
+#  RewriteCond %{HTTPS} off
+#  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+#</ifModule>
 
 AddType application/x-httpd-php .php
 AddType application/x-httpd-php-source .phps
 AddHandler cgi-script .cgi .pl
-DirectoryIndex index.html index.htm index.shtml index.shtm index.php index.cgi index.usr welcome.html
 
 <Files ~ "^\.ht">
   Order allow,deny
@@ -200,8 +182,9 @@ DirectoryIndex index.html index.htm index.shtml index.shtm index.php index.cgi i
   Satisfy All
 </Files>
 
-<Directory "<%= @document_root %>">
-  Options -Indexes +FollowSymLinks +MultiViews +ExecCGI +Includes
-  AllowOverride All
-  Require all granted
+DocumentRoot "/var/www/html"
+<Directory "/var/www">
+    AllowOverride None
+    # Allow open access:
+    Require all granted
 </Directory>
