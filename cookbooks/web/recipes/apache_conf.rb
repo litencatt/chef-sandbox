@@ -8,6 +8,11 @@ template '/etc/httpd/conf/httpd.conf' do
   notifies :reload, 'service[httpd]'
 end
 
+template '/etc/httpd/conf.modules.d/base.conf' do
+  mode 0644
+  notifies :reload, 'service[httpd]'
+end
+
 cookbook_file '/etc/httpd/conf.d/ssl.conf' do
   source 'ssl.conf'
   notifies :reload, 'service[httpd]'
