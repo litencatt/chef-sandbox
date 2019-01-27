@@ -35,4 +35,4 @@ default['web']['document_root'] = '/var/www/roundcube'
 default['web']['server_name'] = default[:fqdn]
 default['web']['max_client'] = 100
 
-default['roundcube']['install_dir'] = default['web']['document_root']
+default['roundcube']['install_dir'] = '/var/www'
