@@ -31,6 +31,8 @@ default['phpenv']['global'] = '7.3.1'
 default['phpenv']['mod_php'] = '7.3.1'
 
 default[:fqdn] = 'web.sandbox.test'
-default['web']['document_root'] = '/var/www/web'
+default['web']['document_root'] = '/var/www/roundcube'
 default['web']['server_name'] = default[:fqdn]
 default['web']['max_client'] = 100
+
+default['roundcube']['install_dir'] = default['web']['document_root']
