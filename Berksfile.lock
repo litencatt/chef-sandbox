@@ -6,13 +6,14 @@ DEPENDENCIES
   motd
     git: https://github.com/linyows/motd-cookbook.git
     revision: 8981cd11c8d219912955c5b523e135bd719f6e14
-  mysql (~> 5.0)
+  mysql (~> 6.0)
   phpenv
     git: https://github.com/Numergy/phpenv-cookbook
     revision: c0fa251266a5501d98410c2b2a3eeaa6b3048402
   roundcube
-    git: https://github.com/xhost-cookbooks/roundcube.git
-    revision: 97fbb8f64f3ab29aad83a04f4fd6a31019ec0d32
+    git: https://github.com/litencatt/roundcube.git
+    revision: 376ea633b10680c5129227583ab873bed54251bc
+    branch: update-mysql-dependency-to-6
   yum
 
 GRAPH
@@ -32,7 +33,8 @@ GRAPH
   mingw (2.1.0)
     seven_zip (>= 0.0.0)
   motd (0.2.0)
-  mysql (5.6.3)
+  mysql (6.1.3)
+    smf (>= 0.0.0)
     yum-mysql-community (>= 0.0.0)
   nginx (9.0.0)
     build-essential (>= 5.0)
@@ -47,17 +49,20 @@ GRAPH
   phpenv (0.7.2)
     apt (>= 0.0.0)
     build-essential (>= 0.0.0)
+  rbac (1.0.3)
   roundcube (0.2.0)
     apt (>= 0.0.0)
     ark (>= 0.0.0)
     build-essential (>= 0.0.0)
-    mysql (~> 5.0)
+    mysql (~> 6.0)
     nginx (>= 0.0.0)
     openssl (>= 0.0.0)
     php (>= 0.0.0)
     php-fpm (>= 0.0.0)
   seven_zip (3.0.0)
     windows (>= 0.0.0)
+  smf (2.2.8)
+    rbac (>= 1.0.1)
   windows (5.1.1)
   yum (5.1.0)
   yum-epel (3.3.0)

@@ -6,3 +6,5 @@ version          '0.1.0'
 
 depends 'phpenv'
 depends 'httpd', '~> 0.2'
+depends 'mysql'
+depends 'roundcube'
