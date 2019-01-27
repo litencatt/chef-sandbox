@@ -35,4 +35,7 @@ default['web']['document_root'] = '/var/www/roundcube'
 default['web']['server_name'] = default[:fqdn]
 default['web']['max_client'] = 100
 
+default['roundcube']['version'] = '1.3.8'
+default['roundcube']['download_url'] = "https://github.com/roundcube/roundcubemail/releases/download/#{node['roundcube']['version']}/roundcubemail-#{node['roundcube']['version']}.tar.gz"
+default['roundcube']['download_checksum'] = '93314f125033d8ce2755198367c45bdd2f4cfee5d7688f913877beeb6c532858'
 default['roundcube']['install_dir'] = '/var/www'
