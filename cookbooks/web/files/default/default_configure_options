@@ -1,8 +1,8 @@
---with-apxs2=/usr/bin/apxs
+--enable-fpm
 --enable-maintainer-zts
 --with-pear
 --with-tsrm-pthreads
---with-mysql
+--with-mysqli
 --with-gd
 --enable-ftp
 --enable-gd-native-ttf
