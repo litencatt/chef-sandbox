@@ -16,3 +16,4 @@ nodes/*pbdev.json
 nodes/vagrant*
 vendor/bundle
 vendor/cookbooks
+nodes/vagrant*
