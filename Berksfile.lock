@@ -1,33 +1,69 @@
 DEPENDENCIES
-  git
+  git (~> 6.0.0)
   httpd
     git: https://github.com/chef-cookbooks/httpd.git
     revision: a19589d7c9017a10e745c0d5325b94b68de25ce4
   motd
     git: https://github.com/linyows/motd-cookbook.git
     revision: 8981cd11c8d219912955c5b523e135bd719f6e14
-  mysql
+  mysql (~> 6.0)
   phpenv
     git: https://github.com/Numergy/phpenv-cookbook
     revision: c0fa251266a5501d98410c2b2a3eeaa6b3048402
+  roundcube
+    git: https://github.com/litencatt/roundcube.git
+    revision: 376ea633b10680c5129227583ab873bed54251bc
+    branch: update-mysql-dependency-to-6
   yum
 
 GRAPH
   apt (7.1.1)
+  ark (4.0.0)
+    build-essential (>= 0.0.0)
+    seven_zip (>= 0.0.0)
   build-essential (8.2.1)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
-  git (9.0.1)
-    build-essential (>= 5.0.0)
+  dmg (4.1.1)
+  git (6.0.0)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    yum-epel (>= 0.0.0)
   httpd (0.6.2)
   mingw (2.1.0)
     seven_zip (>= 0.0.0)
   motd (0.2.0)
-  mysql (8.5.1)
+  mysql (6.1.3)
+    smf (>= 0.0.0)
+    yum-mysql-community (>= 0.0.0)
+  nginx (9.0.0)
+    build-essential (>= 5.0)
+    ohai (>= 4.1.0)
+    yum-epel (>= 0.0.0)
+  ohai (5.2.5)
+  openssl (8.5.5)
+  php (6.1.1)
+    build-essential (>= 5.0)
+    yum-epel (>= 0.0.0)
+  php-fpm (0.8.0)
   phpenv (0.7.2)
     apt (>= 0.0.0)
     build-essential (>= 0.0.0)
+  rbac (1.0.3)
+  roundcube (0.2.0)
+    apt (>= 0.0.0)
+    ark (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    mysql (~> 6.0)
+    nginx (>= 0.0.0)
+    openssl (>= 0.0.0)
+    php (>= 0.0.0)
+    php-fpm (>= 0.0.0)
   seven_zip (3.0.0)
     windows (>= 0.0.0)
+  smf (2.2.8)
+    rbac (>= 1.0.1)
   windows (5.1.1)
   yum (5.1.0)
+  yum-epel (3.3.0)
+  yum-mysql-community (4.0.1)

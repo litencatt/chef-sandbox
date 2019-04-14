@@ -12,12 +12,6 @@ end
   package name
 end
 
-directory node['web']['document_root'] do
-  mode '775'
-  owner 'apache'
-  group 'apache'
-end
-
 service 'httpd' do
   supports :status => true, :restart => true, :reload => true
   action [:start, :enable]
