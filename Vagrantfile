@@ -22,6 +22,11 @@ Vagrant.configure("2") do |config|
     hostname: :web
   }
 
+  orchestrator = {
+    ip: '192.168.33.20',
+    hostname: :orchestrator
+  }
+
   def _configure(chef)
     chef.version = '13.10'
     chef.cookbooks_path = %w(cookbooks vendor/cookbooks)
@@ -40,6 +45,15 @@ Vagrant.configure("2") do |config|
     config.vm.provider :virtualbox do |vbox|
       vbox.customize ["modifyvm", :id, "--memory", memory.to_i]
       vbox.customize ["modifyvm", :id, "--cpus", cpus.to_i]
+    end
+  end
+
+  config.vm.define :orchestrator do |c|
+    c.vm.network :private_network, ip: orchestrator[:ip]
+    c.vm.hostname = orchestrator[:hostname]
+    c.vm.provision :chef_zero do |chef|
+      _configure chef
+      chef.add_role 'base'
     end
   end
 
