@@ -1,4 +1,7 @@
 DEPENDENCIES
+  consul
+    git: https://github.com/linyows/consul-cookbook.git
+    revision: 26f2ef04f70454faf76711a406e4dbddf8a61436
   git
   httpd
     git: https://github.com/chef-cookbooks/httpd.git
@@ -17,6 +20,7 @@ GRAPH
   build-essential (8.2.1)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
+  consul (0.15.0)
   git (9.0.1)
     build-essential (>= 5.0.0)
   httpd (0.6.2)

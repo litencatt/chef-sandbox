@@ -6,13 +6,10 @@
 .env
 .envrc
 .rake_tasks
-.rake_tasks
 .vagrant/
 /bin
-/docker-build.log
 backup
 clients
-nodes/*pbdev.json
-nodes/vagrant*
+nodes/*.json
 vendor/bundle
 vendor/cookbooks
