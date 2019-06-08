@@ -24,9 +24,9 @@ http {
                     "size:$body_bytes_sent\t"
                     "referer:$http_referer\t"
                     "ua:$http_user_agent\t"
-                    "reqtime:$request_time\t";
+                    "reqtime:$request_time";
 
-    access_log  <%= node['nginxxx']['log'] %>/access.log  main;
+    access_log  <%= node['nginxxx']['log'] %>/access.log  ltsv;
 
     sendfile  on;
     keepalive_timeout  65;
