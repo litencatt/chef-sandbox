@@ -14,9 +14,17 @@ http {
     include       <%= node['nginxxx']['dir'] %>/mime.types;
     default_type  application/octet-stream;
 
-    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
-                      '$status $body_bytes_sent "$http_referer" '
-                      '"$http_user_agent" "$http_x_forwarded_for"';
+    log_format ltsv "host:$remote_addr\t"
+                    "user:$remote_user\t"
+                    "time:$time_local\t"
+                    "method:$request_method\t"
+                    "uri:$request_uri\t"
+                    "protocol:$server_protocol\t"
+                    "status:$status\t"
+                    "size:$body_bytes_sent\t"
+                    "referer:$http_referer\t"
+                    "ua:$http_user_agent\t"
+                    "reqtime:$request_time\t";
 
     access_log  <%= node['nginxxx']['log'] %>/access.log  main;
 
