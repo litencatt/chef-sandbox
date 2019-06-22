@@ -28,6 +28,7 @@ http {
 
     access_log  <%= node['nginxxx']['log'] %>/access.log  ltsv;
 
+    server_tokens off;
     sendfile  on;
     keepalive_timeout  65;
 
