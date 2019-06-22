@@ -1,0 +1,37 @@
+user  <%= node['nginxxx']['user'] %>;
+worker_processes auto;
+worker_cpu_affinity auto;
+worker_rlimit_nofile 4096;
+
+error_log  <%= node['nginxxx']['log'] %>/error.log warn;
+pid <%= node['nginxxx']['pid'] %>;
+
+events {
+    worker_connections  1024;
+}
+
+http {
+    include       <%= node['nginxxx']['dir'] %>/mime.types;
+    default_type  application/octet-stream;
+
+    log_format ltsv "host:$remote_addr\t"
+                    "user:$remote_user\t"
+                    "time:$time_local\t"
+                    "method:$request_method\t"
+                    "uri:$request_uri\t"
+                    "protocol:$server_protocol\t"
+                    "status:$status\t"
+                    "size:$body_bytes_sent\t"
+                    "referer:$http_referer\t"
+                    "ua:$http_user_agent\t"
+                    "reqtime:$request_time";
+
+    access_log  <%= node['nginxxx']['log'] %>/access.log  ltsv;
+
+    server_tokens off;
+    sendfile  on;
+    keepalive_timeout  65;
+
+    include <%= node['nginxxx']['dir'] %>/conf.d/*.conf;
+    include <%= node['nginxxx']['dir'] %>/sites-enabled/*;
+}
