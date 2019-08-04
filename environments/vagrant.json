@@ -3,6 +3,15 @@
   "override_attributes": {
     "proxy": {
       "fqdn": "proxy.test"
+    },
+    "consul": {
+      "dc": "vagrant",
+      "if": "enp0s8",
+      "client_addr": "127.0.0.1",
+      "start_join": true,
+      "servers": [
+        "192.168.33.20"
+      ]
     }
   }
 }
